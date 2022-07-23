@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    (タイトル、CSS、JavaScript等の情報)
+    </title>
+    <link rel="stylesheet" href="{{url_for('static', filename='try_css.css')}}">
+</head>
+<body>
+    <form method="POST" action="http://127.0.0.1:5000/show_data">
+        <table>
+            <tr><th>a</th><th>c</th></tr>
+            <tr><td>b</td><td>d</td></tr>
+            <input type="text" name="text" value="テキスト">
+            <input type="button" name="button" value="ボタン">
+            <input type="checkbox" name="check" value="チェックボックス">
+            <input type="submit" name="送信" value="送信">
+        </table>
+    </form>
+</body>
+</html>
